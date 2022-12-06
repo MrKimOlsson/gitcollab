@@ -7,4 +7,64 @@
 body {
     background-color: black;
     color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+/* p, h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+  } */
+  
+  /* @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  } */
+
+  .sectionOne {
+    animation-duration: 3s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    padding-top: 2rem;
+  }
+
+  @keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    25% {
+        color: blue;
+    }
+
+    50% {
+        color: purple;
+        padding-top: 70vh;
+        transform: rotate(360deg);
+    }
+
+    75% {
+        color: red;
+    }
+
+    to {
+        opacity: 1;
+    }
+  }
